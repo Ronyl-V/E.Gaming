@@ -1,0 +1,2758 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <head>
+        <title>E.Gaming</title>
+    </head>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <img src="../images/Home/image/logo1.png">
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">
+                            <i class='bx bx-home-alt nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../html/product.html" class="nav__link active-link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>
+                            <span class="nav__name">Product</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                      <a href="./controller.html" class="nav__link">
+                          <i class='bx bx-book-alt nav__icon'></i>
+                          <span class="nav__name">Extras</span>
+                      </a>
+                  </li>
+
+                    <li class="nav__item">
+                        <a href="./contact.html" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon'></i>
+                            <span class="nav__name">Contact</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./login.html" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">Login</span>
+                        </a>
+                    </li>
+                    <div class="cart-icon" onclick="toggleModal()">
+                      <img src="../images/Home/image/cart.png">
+                      <span id="cart-count">0</span>
+                    </div>
+                </ul>
+            </div>
+    </header>
+    <!--Modal for Add to cart-->
+    <div class="cart_modal" id="cart-modal">
+      <div class="cart_modal_content">
+          <h3>Your Cart</h3>
+          <div id="cart-items"></div>
+          <div class="total" id="total-price">Total: €0</div>
+          <button class="cart_buy" onclick="buyItems()">Buy</button>
+      </div>
+  </div>
+
+    <!--MAIN-CONTENT-->
+    <section class="main">
+        <div class="main-video-background">
+            <video autoplay muted loop>
+              <source src="../images/Contact/image/contact-video.mp4" type="video/mp4">
+            </video>
+            <div class="main-text">
+                <h2>Game Bundles</h2>
+                <p>Discover games made for you, from major exclusive productions to innovative indie games. 
+                All these titles come to life thanks to the power of the PS5™ console</p>
+                <div class="buttons">
+                    <button class="latest">Games available now</button>
+                    <button class="upcoming">Upcoming Games</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="title">
+        <h5>PS5 games exclusively on console, brought to you by PlayStation Studios</h5>
+    </div>
+    
+    <section class="game">
+        <div class="image"><img src="../images/Home/image/spaceboardastro.webp"></div>
+        <div class="box-content">
+            <div class="box"><img src="../images/Home/image/boxastro.webp"></div>
+            <div class="content-text">
+            <h2>Astro Bot</h2>
+            <p>Hop on ASTRO's trusty Dual Speeder and get ready for an incredible adventure through spectacular and fun-filled worlds brimming with secrets and surprises</p>
+            <p><span class="date">Date de sortie</span>: 6 Septembre 2024</p>
+            <button id="info1" class="more">More info</button>
+            </div>
+            <div id="more1" class="modal">
+
+              <div class="modal-content">
+                  <div class="content">
+                      <!--Video-Content-->
+                      <div class="video-background">
+                          <video autoplay muted loop>
+                            <source src="../images/Contact/image/Astro Bot - Play Will Find A Way Live Action Trailer _ PS5 Games.mp4" type="video/mp4">
+                          </video>
+                          <div class="text">
+                              <div class="product-container">
+                                  <h1 class="product-title">Astro Bot</h1>
+                                  <p class="product-subtitle">Activision</p>
+                                  <div class="platforms">
+                                    <span class="platform-badge">PS5</span>
+                                    <span class="platform-badge">PS4</span>
+                                  </div>
+                                  <p class="price">€52,99</p>
+                                  <div class="add-to-cart">
+                                    <button class="btn" onclick="addToCart(13)">Add To Cart</button>
+                                    <div class="wishlist-icon">❤</div>
+                                  </div>
+                                  <div class="product-features">
+                                    <div class="feature">
+                                      <span class="feature-icon">🎮</span>
+                                      PS Plus required for online play
+                                    </div>
+                                    <div class="feature">
+                                      <span class="feature-icon">💰</span>
+                                      Optional in-game purchases
+                                    </div>
+                                    <div class="feature">
+                                      <span class="feature-icon">🌐</span>
+                                      Online game required
+                                    </div>
+                                    <div class="feature">
+                                      <span class="feature-icon">👥</span>
+                                      Supports up to 40 players online with PS Plus
+                                    </div>
+                                    <div class="feature">
+                                      <span class="feature-icon">📡</span>
+                                      Remote play supported
+                                    </div>
+                                    <div class="feature">
+                                      <span class="feature-icon">🎮</span>
+                                      Vibration function and trigger effect supported
+                                    </div>
+                                    <div class="feature">
+                                      <span class="feature-icon">🔧</span>
+                                      Improved for the PS5 Pro
+                                    </div>
+                                  </div>
+                                </div>
+                              <div id="closeinfo1" class="closebtn"><span class="close" data-close="modal1">&#x2715;</span></div>
+                          </div>
+                      </div>
+          
+                      <!--Note-->
+                      <section class="note">
+                          <div class="rating-container">
+                              <div class="rating-header">
+                                <h3>Overall Player Ratings</h3>
+                                <div class="overall-rating">
+                                  <span>3.98</span>
+                                  <div class="stars">★★★★☆</div>
+                                  <small>(486953 reviews)</small>
+                                </div>
+                              </div>
+                          
+                              <!-- Rating Breakdown -->
+                              <div class="rating-bar">
+                                <span>★★★★★</span>
+                                <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                <div class="percentage">60%</div>
+                              </div>
+                              <div class="rating-bar">
+                                <span>★★★★☆</span>
+                                <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                <div class="percentage">11%</div>
+                              </div>
+                              <div class="rating-bar">
+                                <span>★★★☆☆</span>
+                                <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                <div class="percentage">12%</div>
+                              </div>
+                              <div class="rating-bar">
+                                <span>★★☆☆☆</span>
+                                <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                <div class="percentage">2%</div>
+                              </div>
+                              <div class="rating-bar">
+                                <span>★☆☆☆☆</span>
+                                <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                <div class="percentage">15%</div>
+                              </div>
+                            </div>
+                      </section>
+          
+                      <!--Comment-->
+                      <section class="comment-box">
+                          <div class="comment-container">
+                              <div class="user-info">
+                                <div class="user-avatar">
+                                  <img src="../images/Contact/image/avatar1.png">
+                                </div>
+                                <div class="user-name">Axel06<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                              </div>
+                              <div class="comment-content">
+                                <div class="comment-header">
+                                  <div class="stars">★★★☆☆</div>
+                                  <small>Review left on 12/08/2024</small>
+                                </div>
+                                <div class="comment-text">
+                                  <p>Good game</p>
+                                  <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                </div>
+                                <div class="comment-actions">
+                                  <button>
+                                    👍 Utile (1)
+                                  </button>
+                                  <button>
+                                    🚩 Signaler
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="comment-container">
+                              <div class="user-info">
+                                <div class="user-avatar">
+                                  <img src="../images/Contact/image/avatar2.png" alt="User Avatar">
+                                </div>
+                                <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                              </div>
+                              <div class="comment-content">
+                                <div class="comment-header">
+                                  <div class="stars">★★★☆☆</div>
+                                  <small>Review left on 12/08/2024</small>
+                                </div>
+                                <div class="comment-text">
+                                  <p>Good game</p>
+                                  <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                </div>
+                                <div class="comment-actions">
+                                  <button>
+                                    👍 Utile (1)
+                                  </button>
+                                  <button>
+                                    🚩 Signaler
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="comment-container">
+                              <div class="user-info">
+                                <div class="user-avatar">
+                                  <img src="../images/Contact/image/avatar3.png" alt="User Avatar">
+                                </div>
+                                <div class="user-name">Niecko16<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                              </div>
+                              <div class="comment-content">
+                                <div class="comment-header">
+                                  <div class="stars">★★★☆☆</div>
+                                  <small>Review left on 12/08/2024</small>
+                                </div>
+                                <div class="comment-text">
+                                  <p>Good game</p>
+                                  <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                </div>
+                                <div class="comment-actions">
+                                  <button>
+                                    👍 Helpful (1)
+                                  </button>
+                                  <button>
+                                    🚩 Signal
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                      </section>
+                      <div class="end">
+                          <p>To learn more, visit www.callofduty.com.</p>
+                          <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                               Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                               licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="game-content">
+        </div>
+        <div class="image-1"><img src="../images/Home/image/legoimg.webp"></div>
+        <div class="box-content-1">
+            <div class="box-1"><img src="../images/Home/image/legobox.webp"></div>
+            <div class="content-text-1">
+            <h2>LEGO Horizon Adventures</h2>
+            <p>Join the machine hunter Aloy and her band of bold heroes on a quest through the wilds to save the world and uncover the secrets of her past.
+              Dive into an exhilarating adventure, customize endlessly, and fight solo or with friends</p>
+            <p><span class="date">Date de sortie</span>: 15 Décembre 2024</p>
+            <button id="info2" class="more">More info</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="sale">
+        <div class="dispo">
+            <h2>Discover our latest arrivals and upcoming games available in our store</h2>
+            <div class="new">
+                <div id="card1" class="card">
+                    <img src="../images/Home/image/sonic.avif">
+                    <div class="info">
+                        <div class="name">Sonic X Shadow Generations</div>
+                        <button class="btn">Buy €49.99</button>
+                    </div>
+                </div>
+                <div id="modal1" class="modal">
+
+                    <div class="modal-content">
+                        <div class="content">
+                            <!--Video-Content-->
+                            <div class="video-background">
+                                <video autoplay muted loop>
+                                  <source src="../images/Contact/image/SONIC X SHADOW GENERATIONS - Sonic the Hedgehog 3 Movie Pack Trailer.mp4" type="video/mp4">
+                                </video>
+                                <div class="text">
+                                    <div class="product-container">
+                                        <h1 class="product-title">Sonic X Shadow Generations</h1>
+                                        <p class="product-subtitle">Activision</p>
+                                        <div class="platforms">
+                                          <span class="platform-badge">PS5</span>
+                                          <span class="platform-badge">PS4</span>
+                                        </div>
+                                        <p class="price">€49,99</p>
+                                        <div class="add-to-cart">
+                                          <button class="btn" onclick="addToCart(1)">Add To Cart</button>
+                                          <div class="wishlist-icon">❤</div>
+                                        </div>
+                                        <div class="product-features">
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            PS Plus required for online play
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">💰</span>
+                                            Optional in-game purchases
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🌐</span>
+                                            Online game required
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">👥</span>
+                                            Supports up to 40 players online with PS Plus
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">📡</span>
+                                            Remote play supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            Vibration function and trigger effect supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🔧</span>
+                                            Improved for the PS5 Pro
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="closebtn"><span class="close" data-close="modal1">&#x2715;</span></div>
+                                </div>
+                            </div>
+                
+                            <!--Note-->
+                            <section class="note">
+                                <div class="rating-container">
+                                    <div class="rating-header">
+                                      <h3>Overall Player Ratings</h3>
+                                      <div class="overall-rating">
+                                        <span>3.98</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <small>(486953 reviews)</small>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Rating Breakdown -->
+                                    <div class="rating-bar">
+                                      <span>★★★★★</span>
+                                      <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                      <div class="percentage">60%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★★☆</span>
+                                      <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                      <div class="percentage">11%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★☆☆</span>
+                                      <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                      <div class="percentage">12%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                      <div class="percentage">2%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★☆☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                      <div class="percentage">15%</div>
+                                    </div>
+                                  </div>
+                            </section>
+                
+                            <!--Comment-->
+                            <section class="comment-box">
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png">
+                                      </div>
+                                      <div class="user-name">Axel06<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar2.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar3.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Niecko16<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Helpful (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signal
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="end">
+                                <p>To learn more, visit www.callofduty.com.</p>
+                                <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                                     Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                                     licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card2" class="card">
+                    <img src="../images/Home/image/PS5_COD6_02.jpg">
+                    <div class="info">
+                        <div class="name">Call of Duty Black Ops 6</div>
+                        <button class="btn">Buy €79.99</button>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <div class="content">
+                            <!--Video-Content-->
+                            <div class="video-background">
+                                <video autoplay muted loop>
+                                  <source src="../images/Contact/image/Cerberus_KA_NO-LOGO.mp4" type="video/mp4">
+                                </video>
+                                <div class="text">
+                                    <div class="product-container">
+                                        <h1 class="product-title">Call Of Duty Black Ops 6</h1>
+                                        <p class="product-subtitle">Activision</p>
+                                        <div class="platforms">
+                                          <span class="platform-badge">PS5</span>
+                                          <span class="platform-badge">PS4</span>
+                                        </div>
+                                        <p class="price">€79,99</p>
+                                        <div class="add-to-cart">
+                                          <button class="btn" onclick="addToCart(2)">Add To Cart</button>
+                                          <div class="wishlist-icon">❤</div>
+                                        </div>
+                                        <div class="product-features">
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            PS Plus required for online play
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">💰</span>
+                                            Optional in-game purchases
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🌐</span>
+                                            Online game required
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">👥</span>
+                                            Supports up to 40 players online with PS Plus
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">📡</span>
+                                            Remote play supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            Vibration function and trigger effect supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🔧</span>
+                                            Improved for the PS5 Pro
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="closebtn"><span class="close" data-close="modal2">&#x2715;</span></div>
+                                </div>
+                            </div>
+                
+                            <!--Note-->
+                            <section class="note">
+                                <div class="rating-container">
+                                    <div class="rating-header">
+                                      <h3>Overall Player Ratings</h3>
+                                      <div class="overall-rating">
+                                        <span>3.98</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <small>(486953 reviews)</small>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Rating Breakdown -->
+                                    <div class="rating-bar">
+                                      <span>★★★★★</span>
+                                      <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                      <div class="percentage">60%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★★☆</span>
+                                      <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                      <div class="percentage">11%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★☆☆</span>
+                                      <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                      <div class="percentage">12%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                      <div class="percentage">2%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★☆☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                      <div class="percentage">15%</div>
+                                    </div>
+                                  </div>
+                            </section>
+                
+                            <!--Comment-->
+                            <section class="comment-box">
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Axel06<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar2.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar3.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Niecko16<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Helpful (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signal
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="end">
+                                <p>To learn more, visit www.callofduty.com.</p>
+                                <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                                     Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                                     licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card3" class="card">
+                    <img src="../images/Home/image/clank.avif">
+                    <div class="info">
+                        <div class="name">Ratchet and Clank</div>
+                        <button class="btn">Buy €37.99</button>
+                    </div>
+                </div>
+                <div id="modal3" class="modal">
+
+                    <div class="modal-content">
+                        <div class="content">
+                            <!--Video-Content-->
+                            <div class="video-background">
+                                <video autoplay muted loop>
+                                  <source src="../images/Contact/image/Ratchet & Clank_ Rift Apart – Franchise Evolution _ PS5.mp4" type="video/mp4">
+                                </video>
+                                <div class="text">
+                                    <div class="product-container">
+                                        <h1 class="product-title">Ratchet & Clank</h1>
+                                        <p class="product-subtitle">Activision</p>
+                                        <div class="platforms">
+                                          <span class="platform-badge">PS5</span>
+                                          <span class="platform-badge">PS4</span>
+                                        </div>
+                                        <p class="price">€37,99</p>
+                                        <div class="add-to-cart">
+                                          <button class="btn" onclick="addToCart(3)">Add To Cart</button>
+                                          <div class="wishlist-icon">❤</div>
+                                        </div>
+                                        <div class="product-features">
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            PS Plus required for online play
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">💰</span>
+                                            Optional in-game purchases
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🌐</span>
+                                            Online game required
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">👥</span>
+                                            Supports up to 40 players online with PS Plus
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">📡</span>
+                                            Remote play supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            Vibration function and trigger effect supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🔧</span>
+                                            Improved for the PS5 Pro
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="closebtn"><span class="close" data-close="modal3">&#x2715;</span></div>
+                                </div>
+                            </div>
+                
+                            <!--Note-->
+                            <section class="note">
+                                <div class="rating-container">
+                                    <div class="rating-header">
+                                      <h3>Overall Player Ratings</h3>
+                                      <div class="overall-rating">
+                                        <span>3.98</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <small>(486953 reviews)</small>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Rating Breakdown -->
+                                    <div class="rating-bar">
+                                      <span>★★★★★</span>
+                                      <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                      <div class="percentage">60%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★★☆</span>
+                                      <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                      <div class="percentage">11%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★☆☆</span>
+                                      <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                      <div class="percentage">12%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                      <div class="percentage">2%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★☆☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                      <div class="percentage">15%</div>
+                                    </div>
+                                  </div>
+                            </section>
+                
+                            <!--Comment-->
+                            <section class="comment-box">
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png">
+                                      </div>
+                                      <div class="user-name">Axel06<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar2.png">
+                                      </div>
+                                      <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar3.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Niecko16<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Helpful (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signal
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="end">
+                                <p>To learn more, visit www.callofduty.com.</p>
+                                <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                                     Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                                     licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card4" class="card">
+                    <img src="../images/Home/image/mortal.avif">
+                    <div class="info">
+                        <div class="name">Mortal Kombat 11</div>
+                        <button class="btn">Buy €63.99</button>
+                    </div>
+                </div>
+                <div id="modal4" class="modal">
+                    <div class="modal-content">
+                        <div class="content">
+                            <!--Video-Content-->
+                            <div class="video-background">
+                                <video autoplay muted loop>
+                                  <source src="../images/Contact/image/Mortal Kombat 11 - Official Fatalities Trailer.mp4" type="video/mp4">
+                                </video>
+                                <div class="text">
+                                    <div class="product-container">
+                                        <h1 class="product-title">Mortal Kombat 11</h1>
+                                        <p class="product-subtitle">Activision</p>
+                                        <div class="platforms">
+                                          <span class="platform-badge">PS5</span>
+                                          <span class="platform-badge">PS4</span>
+                                        </div>
+                                        <p class="price">€63,99</p>
+                                        <div class="add-to-cart">
+                                          <button class="btn" onclick="addToCart(4)">Add To Cart</button>
+                                          <div class="wishlist-icon">❤</div>
+                                        </div>
+                                        <div class="product-features">
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            PS Plus required for online play
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">💰</span>
+                                            Optional in-game purchases
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🌐</span>
+                                            Online game required
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">👥</span>
+                                            Supports up to 40 players online with PS Plus
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">📡</span>
+                                            Remote play supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            Vibration function and trigger effect supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🔧</span>
+                                            Improved for the PS5 Pro
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="closebtn"><span class="close" data-close="modal4">&#x2715;</span></div>
+                                </div>
+                            </div>
+                
+                            <!--Note-->
+                            <section class="note">
+                                <div class="rating-container">
+                                    <div class="rating-header">
+                                      <h3>Overall Player Ratings</h3>
+                                      <div class="overall-rating">
+                                        <span>3.98</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <small>(486953 reviews)</small>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Rating Breakdown -->
+                                    <div class="rating-bar">
+                                      <span>★★★★★</span>
+                                      <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                      <div class="percentage">60%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★★☆</span>
+                                      <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                      <div class="percentage">11%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★☆☆</span>
+                                      <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                      <div class="percentage">12%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                      <div class="percentage">2%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★☆☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                      <div class="percentage">15%</div>
+                                    </div>
+                                  </div>
+                            </section>
+                
+                            <!--Comment-->
+                            <section class="comment-box">
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Axel06<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar2.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar3.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Niecko16<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Helpful (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signal
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="end">
+                                <p>To learn more, visit www.callofduty.com.</p>
+                                <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                                     Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                                     licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card5" class="card">
+                    <img src="../images/Home/image/lastofus.avif">
+                    <div class="info">
+                        <div class="name">Last of Us 2</div>
+                        <button class="btn">Buy €60.99</button>
+                    </div>
+                </div>
+                <div id="modal5" class="modal">
+                    <div class="modal-content">
+                        <div class="content">
+                            <!--Video-Content-->
+                            <div class="video-background">
+                                <video autoplay muted loop>
+                                  <source src="../images/Contact/image/The Last of Us Part 2 - Official PS5 Enhanced Performance Trailer (4K60).mp4" type="video/mp4">
+                                </video>
+                                <div class="text">
+                                    <div class="product-container">
+                                        <h1 class="product-title">The Last of Us II</h1>
+                                        <p class="product-subtitle">Activision</p>
+                                        <div class="platforms">
+                                          <span class="platform-badge">PS5</span>
+                                          <span class="platform-badge">PS4</span>
+                                        </div>
+                                        <p class="price">€60,99</p>
+                                        <div class="add-to-cart">
+                                          <button class="btn" onclick="addToCart(5)">Add To Cart</button>
+                                          <div class="wishlist-icon">❤</div>
+                                        </div>
+                                        <div class="product-features">
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            PS Plus required for online play
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">💰</span>
+                                            Optional in-game purchases
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🌐</span>
+                                            Online game required
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">👥</span>
+                                            Supports up to 40 players online with PS Plus
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">📡</span>
+                                            Remote play supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            Vibration function and trigger effect supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🔧</span>
+                                            Improved for the PS5 Pro
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="closebtn"><span class="close" data-close="modal5">&#x2715;</span></div>
+                                </div>
+                            </div>
+                
+                            <!--Note-->
+                            <section class="note">
+                                <div class="rating-container">
+                                    <div class="rating-header">
+                                      <h3>Overall Player Ratings</h3>
+                                      <div class="overall-rating">
+                                        <span>3.98</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <small>(486953 reviews)</small>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Rating Breakdown -->
+                                    <div class="rating-bar">
+                                      <span>★★★★★</span>
+                                      <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                      <div class="percentage">60%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★★☆</span>
+                                      <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                      <div class="percentage">11%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★☆☆</span>
+                                      <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                      <div class="percentage">12%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                      <div class="percentage">2%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★☆☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                      <div class="percentage">15%</div>
+                                    </div>
+                                  </div>
+                            </section>
+                
+                            <!--Comment-->
+                            <section class="comment-box">
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Axel06<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar2.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Niecko16<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Helpful (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signal
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="end">
+                                <p>To learn more, visit www.callofduty.com.</p>
+                                <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                                     Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                                     licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card6" class="card">
+                    <img src="../images/Home/image/spider.jpg">
+                    <div class="info">
+                        <div class="name">Spiderman 2</div>
+                        <button class="btn">Buy €59.99</button>
+                    </div>
+                </div>
+                <div id="modal6" class="modal">
+                    <div class="modal-content">
+                        <div class="content">
+                            <!--Video-Content-->
+                            <div class="video-background">
+                                <video autoplay muted loop>
+                                  <source src="../images/Contact/image/Marvel's Spider-Man 2 - Be Greater. Together. Trailer I PS5 Games.mp4" type="video/mp4">
+                                </video>
+                                <div class="text">
+                                    <div class="product-container">
+                                        <h1 class="product-title">Spiderman 2</h1>
+                                        <p class="product-subtitle">Activision</p>
+                                        <div class="platforms">
+                                          <span class="platform-badge">PS5</span>
+                                          <span class="platform-badge">PS4</span>
+                                        </div>
+                                        <p class="price">€59,99</p>
+                                        <div class="add-to-cart">
+                                          <button class="btn" onclick="addToCart(6)">Add To Cart</button>
+                                          <div class="wishlist-icon">❤</div>
+                                        </div>
+                                        <div class="product-features">
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            PS Plus required for online play
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">💰</span>
+                                            Optional in-game purchases
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🌐</span>
+                                            Online game required
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">👥</span>
+                                            Supports up to 40 players online with PS Plus
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">📡</span>
+                                            Remote play supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            Vibration function and trigger effect supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🔧</span>
+                                            Improved for the PS5 Pro
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="closebtn"><span class="close" data-close="modal6">&#x2715;</span></div>
+                                </div>
+                            </div>
+                
+                            <!--Note-->
+                            <section class="note">
+                                <div class="rating-container">
+                                    <div class="rating-header">
+                                      <h3>Overall Player Ratings</h3>
+                                      <div class="overall-rating">
+                                        <span>3.98</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <small>(486953 reviews)</small>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Rating Breakdown -->
+                                    <div class="rating-bar">
+                                      <span>★★★★★</span>
+                                      <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                      <div class="percentage">60%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★★☆</span>
+                                      <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                      <div class="percentage">11%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★☆☆</span>
+                                      <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                      <div class="percentage">12%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                      <div class="percentage">2%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★☆☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                      <div class="percentage">15%</div>
+                                    </div>
+                                  </div>
+                            </section>
+                
+                            <!--Comment-->
+                            <section class="comment-box">
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Axel06<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar2.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar3.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Niecko16<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Helpful (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signal
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="end">
+                                <p>To learn more, visit www.callofduty.com.</p>
+                                <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                                     Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                                     licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card7" class="card">
+                    <img src="../images/Home/image/god.jpg">
+                    <div class="info">
+                        <div class="name">God Of War Ragnarok</div>
+                        <button class="btn">Buy €47.99</button>
+                    </div>
+                </div>
+                <div id="modal7" class="modal">
+                    <div class="modal-content">
+                        <div class="content">
+                            <!--Video-Content-->
+                            <div class="video-background">
+                                <video autoplay muted loop>
+                                  <source src="../images/Contact/image/God of War Ragnarök - Father and Son Cinematic Trailer _ PS5 & PS4 Games.mp4" type="video/mp4">
+                                </video>
+                                <div class="text">
+                                    <div class="product-container">
+                                        <h1 class="product-title">God of War Ragnarok</h1>
+                                        <p class="product-subtitle">Activision</p>
+                                        <div class="platforms">
+                                          <span class="platform-badge">PS5</span>
+                                          <span class="platform-badge">PS4</span>
+                                        </div>
+                                        <p class="price">€47,99</p>
+                                        <div class="add-to-cart">
+                                          <button class="btn" onclick="addToCart(7)">Add To Cart</button>
+                                          <div class="wishlist-icon">❤</div>
+                                        </div>
+                                        <div class="product-features">
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            PS Plus required for online play
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">💰</span>
+                                            Optional in-game purchases
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🌐</span>
+                                            Online game required
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">👥</span>
+                                            Supports up to 40 players online with PS Plus
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">📡</span>
+                                            Remote play supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            Vibration function and trigger effect supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🔧</span>
+                                            Improved for the PS5 Pro
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="closebtn"><span class="close" data-close="modal7">&#x2715;</span></div>
+                                </div>
+                            </div>
+                
+                            <!--Note-->
+                            <section class="note">
+                                <div class="rating-container">
+                                    <div class="rating-header">
+                                      <h3>Overall Player Ratings</h3>
+                                      <div class="overall-rating">
+                                        <span>3.98</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <small>(486953 reviews)</small>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Rating Breakdown -->
+                                    <div class="rating-bar">
+                                      <span>★★★★★</span>
+                                      <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                      <div class="percentage">60%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★★☆</span>
+                                      <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                      <div class="percentage">11%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★☆☆</span>
+                                      <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                      <div class="percentage">12%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                      <div class="percentage">2%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★☆☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                      <div class="percentage">15%</div>
+                                    </div>
+                                  </div>
+                            </section>
+                
+                            <!--Comment-->
+                            <section class="comment-box">
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Axel06<span class="ps-plus"><img src="../Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="https://via.placeholder.com/50" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Niecko16<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Helpful (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signal
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="end">
+                                <p>To learn more, visit www.callofduty.com.</p>
+                                <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                                     Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                                     licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card8" class="card">
+                    <img src="../images/Home/image/tourismo.webp">
+                    <div class="info">
+                        <div class="name">Gran Tourismo 7</div>
+                        <button class="btn">Buy €68.99</button>
+                    </div>
+                </div>
+                <div id="modal8" class="modal">
+                    <div class="modal-content">
+                        <div class="content">
+                            <!--Video-Content-->
+                            <div class="video-background">
+                                <video autoplay muted loop>
+                                  <source src="../images/Contact/image/Gran Turismo 7 - Ready Set GT TV Trailer _ PS5, PS4.mp4" type="video/mp4">
+                                </video>
+                                <div class="text">
+                                    <div class="product-container">
+                                        <h1 class="product-title">Gran Tourismo 7</h1>
+                                        <p class="product-subtitle">Activision</p>
+                                        <div class="platforms">
+                                          <span class="platform-badge">PS5</span>
+                                          <span class="platform-badge">PS4</span>
+                                        </div>
+                                        <p class="price">€68,99</p>
+                                        <div class="add-to-cart">
+                                          <button class="btn" onclick="addToCart(8)">Add To Cart</button>
+                                          <div class="wishlist-icon">❤</div>
+                                        </div>
+                                        <div class="product-features">
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            PS Plus required for online play
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">💰</span>
+                                            Optional in-game purchases
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🌐</span>
+                                            Online game required
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">👥</span>
+                                            Supports up to 40 players online with PS Plus
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">📡</span>
+                                            Remote play supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            Vibration function and trigger effect supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🔧</span>
+                                            Improved for the PS5 Pro
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="closebtn"><span class="close" data-close="modal8">&#x2715;</span></div>
+                                </div>
+                            </div>
+                
+                            <!--Note-->
+                            <section class="note">
+                                <div class="rating-container">
+                                    <div class="rating-header">
+                                      <h3>Overall Player Ratings</h3>
+                                      <div class="overall-rating">
+                                        <span>3.98</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <small>(486953 reviews)</small>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Rating Breakdown -->
+                                    <div class="rating-bar">
+                                      <span>★★★★★</span>
+                                      <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                      <div class="percentage">60%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★★☆</span>
+                                      <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                      <div class="percentage">11%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★☆☆</span>
+                                      <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                      <div class="percentage">12%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                      <div class="percentage">2%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★☆☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                      <div class="percentage">15%</div>
+                                    </div>
+                                  </div>
+                            </section>
+                
+                            <!--Comment-->
+                            <section class="comment-box">
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png">
+                                      </div>
+                                      <div class="user-name">Axel06<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar2.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar3.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Niecko16<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Helpful (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signal
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="end">
+                                <p>To learn more, visit www.callofduty.com.</p>
+                                <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                                     Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                                     licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card9" class="card">
+                    <img src="../images/Home/image/fc.webp">
+                    <div class="info">
+                        <div class="name">EA FC 25</div>
+                        <button class="btn">Buy €79.99</button>
+                    </div>
+                </div>
+                <div id="modal9" class="modal">
+                    <div class="modal-content">
+                        <div class="content">
+                            <!--Video-Content-->
+                            <div class="video-background">
+                                <video autoplay muted loop>
+                                  <source src="../images/Contact/image/FC 25 - Official Intro Ft. Zinedine Zidane _ PS5™ [4K60].mp4" type="video/mp4">
+                                </video>
+                                <div class="text">
+                                    <div class="product-container">
+                                        <h1 class="product-title">EA FC 25</h1>
+                                        <p class="product-subtitle">Electronic Arts</p>
+                                        <div class="platforms">
+                                          <span class="platform-badge">PS5</span>
+                                          <span class="platform-badge">PS4</span>
+                                        </div>
+                                        <p class="price">€79,99</p>
+                                        <div class="add-to-cart">
+                                          <button class="btn" onclick="addToCart(9)">Add To Cart</button>
+                                          <div class="wishlist-icon">❤</div>
+                                        </div>
+                                        <div class="product-features">
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            PS Plus required for online play
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">💰</span>
+                                            Optional in-game purchases
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🌐</span>
+                                            Online game required
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">👥</span>
+                                            Supports up to 40 players online with PS Plus
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">📡</span>
+                                            Remote play supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            Vibration function and trigger effect supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🔧</span>
+                                            Improved for the PS5 Pro
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="closebtn"><span class="close" data-close="modal9">&#x2715;</span></div>
+                                </div>
+                            </div>
+                
+                            <!--Note-->
+                            <section class="note">
+                                <div class="rating-container">
+                                    <div class="rating-header">
+                                      <h3>Overall Player Ratings</h3>
+                                      <div class="overall-rating">
+                                        <span>3.98</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <small>(486953 reviews)</small>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Rating Breakdown -->
+                                    <div class="rating-bar">
+                                      <span>★★★★★</span>
+                                      <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                      <div class="percentage">60%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★★☆</span>
+                                      <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                      <div class="percentage">11%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★☆☆</span>
+                                      <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                      <div class="percentage">12%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                      <div class="percentage">2%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★☆☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                      <div class="percentage">15%</div>
+                                    </div>
+                                  </div>
+                            </section>
+                
+                            <!--Comment-->
+                            <section class="comment-box">
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Axel06<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar2.png">
+                                      </div>
+                                      <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar3.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Niecko16<span class="ps-plus"><img src="../Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Helpful (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signal
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="end">
+                                <p>To learn more, visit www.callofduty.com.</p>
+                                <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                                     Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                                     licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card10" class="card">
+                    <img src="../images/Home/image/gta.jpeg">
+                    <div class="info">
+                        <div class="name">GTA VI</div>
+                        <button class="btn">Buy €78.99</button>
+                    </div>
+                </div>
+                <div id="modal10" class="modal">
+                    <div class="modal-content">
+                        <div class="content">
+                            <!--Video-Content-->
+                            <div class="video-background">
+                                <video autoplay muted loop>
+                                  <source src="../images/Contact/image/Grand Theft Auto VI Trailer 2 (4K).mp4" type="video/mp4">
+                                </video>
+                                <div class="text">
+                                    <div class="product-container">
+                                        <h1 class="product-title">Grand Theft Auto VI</h1>
+                                        <p class="product-subtitle">Activision</p>
+                                        <div class="platforms">
+                                          <span class="platform-badge">PS5</span>
+                                          <span class="platform-badge">PS4</span>
+                                        </div>
+                                        <p class="price">€78,99</p>
+                                        <div class="add-to-cart">
+                                          <button class="btn" onclick="addToCart(10)">Add To Cart</button>
+                                          <div class="wishlist-icon">❤</div>
+                                        </div>
+                                        <div class="product-features">
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            PS Plus required for online play
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">💰</span>
+                                            Optional in-game purchases
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🌐</span>
+                                            Online game required
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">👥</span>
+                                            Supports up to 40 players online with PS Plus
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">📡</span>
+                                            Remote play supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            Vibration function and trigger effect supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🔧</span>
+                                            Improved for the PS5 Pro
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="closebtn"><span class="close" data-close="modal10">&#x2715;</span></div>
+                                </div>
+                            </div>
+                
+                            <!--Note-->
+                            <section class="note">
+                                <div class="rating-container">
+                                    <div class="rating-header">
+                                      <h3>Overall Player Ratings</h3>
+                                      <div class="overall-rating">
+                                        <span>3.98</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <small>(486953 reviews)</small>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Rating Breakdown -->
+                                    <div class="rating-bar">
+                                      <span>★★★★★</span>
+                                      <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                      <div class="percentage">60%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★★☆</span>
+                                      <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                      <div class="percentage">11%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★☆☆</span>
+                                      <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                      <div class="percentage">12%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                      <div class="percentage">2%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★☆☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                      <div class="percentage">15%</div>
+                                    </div>
+                                  </div>
+                            </section>
+                
+                            <!--Comment-->
+                            <section class="comment-box">
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png">
+                                      </div>
+                                      <div class="user-name">Axel06<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar2.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar3.png">
+                                      </div>
+                                      <div class="user-name">Niecko16<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Helpful (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signal
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="end">
+                                <p>To learn more, visit www.callofduty.com.</p>
+                                <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                                     Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                                     licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card11" class="card">
+                    <img src="../images/Home/image/uncharted.jpg">
+                    <div class="info">
+                        <div class="name">Uncharted</div>
+                        <button class="btn">Buy €71.99</button>
+                    </div>
+                </div>
+                <div id="modal11" class="modal">
+                    <div class="modal-content">
+                        <div class="content">
+                            <!--Video-Content-->
+                            <div class="video-background">
+                                <video autoplay muted loop>
+                                  <source src="../images/Contact/image/Uncharted_ Legacy of Thieves Collection – Launch Trailer _ PS5.mp4" type="video/mp4">
+                                </video>
+                                <div class="text">
+                                    <div class="product-container">
+                                        <h1 class="product-title">Uncharted Legacy of Theives Collection</h1>
+                                        <p class="product-subtitle">Activision</p>
+                                        <div class="platforms">
+                                          <span class="platform-badge">PS5</span>
+                                          <span class="platform-badge">PS4</span>
+                                        </div>
+                                        <p class="price">€71,99</p>
+                                        <div class="add-to-cart">
+                                          <button class="btn" onclick="addToCart(11)">Add To Cart</button>
+                                          <div class="wishlist-icon">❤</div>
+                                        </div>
+                                        <div class="product-features">
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            PS Plus required for online play
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">💰</span>
+                                            Optional in-game purchases
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🌐</span>
+                                            Online game required
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">👥</span>
+                                            Supports up to 40 players online with PS Plus
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">📡</span>
+                                            Remote play supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            Vibration function and trigger effect supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🔧</span>
+                                            Improved for the PS5 Pro
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="closebtn"><span class="close" data-close="modal11">&#x2715;</span></div>
+                                </div>
+                            </div>
+                
+                            <!--Note-->
+                            <section class="note">
+                                <div class="rating-container">
+                                    <div class="rating-header">
+                                      <h3>Overall Player Ratings</h3>
+                                      <div class="overall-rating">
+                                        <span>3.98</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <small>(486953 reviews)</small>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Rating Breakdown -->
+                                    <div class="rating-bar">
+                                      <span>★★★★★</span>
+                                      <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                      <div class="percentage">60%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★★☆</span>
+                                      <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                      <div class="percentage">11%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★☆☆</span>
+                                      <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                      <div class="percentage">12%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                      <div class="percentage">2%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★☆☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                      <div class="percentage">15%</div>
+                                    </div>
+                                  </div>
+                            </section>
+                
+                            <!--Comment-->
+                            <section class="comment-box">
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Axel06<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar2.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar3.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Niecko16<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Helpful (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signal
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="end">
+                                <p>To learn more, visit www.callofduty.com.</p>
+                                <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                                     Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                                     licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card12" class="card">
+                    <img src="../images/Home/image/street-fighter.jpg">
+                    <div class="info">
+                        <div class="name">Street Fighter 6</div>
+                        <button class="btn">Buy €69.99</button>
+                    </div>
+                </div>
+                <div id="modal12" class="modal">
+                    <div class="modal-content">
+                        <div class="content">
+                            <!--Video-Content-->
+                            <div class="video-background">
+                                <video autoplay muted loop>
+                                  <source src="../images/Contact/image/Street Fighter 6 - Official Teaser Trailer.mp4" type="video/mp4">
+                                </video>
+                                <div class="text">
+                                    <div class="product-container">
+                                        <h1 class="product-title">Street Fighter 6</h1>
+                                        <p class="product-subtitle">Activision</p>
+                                        <div class="platforms">
+                                          <span class="platform-badge">PS5</span>
+                                          <span class="platform-badge">PS4</span>
+                                        </div>
+                                        <p class="price">€69,99</p>
+                                        <div class="add-to-cart">
+                                          <button class="btn" onclick="addToCart(12)">Add To Cart</button>
+                                          <div class="wishlist-icon">❤</div>
+                                        </div>
+                                        <div class="product-features">
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            PS Plus required for online play
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">💰</span>
+                                            Optional in-game purchases
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🌐</span>
+                                            Online game required
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">👥</span>
+                                            Supports up to 40 players online with PS Plus
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">📡</span>
+                                            Remote play supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🎮</span>
+                                            Vibration function and trigger effect supported
+                                          </div>
+                                          <div class="feature">
+                                            <span class="feature-icon">🔧</span>
+                                            Improved for the PS5 Pro
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="closebtn"><span class="close" data-close="modal12">&#x2715;</span></div>
+                                </div>
+                            </div>
+                
+                            <!--Note-->
+                            <section class="note">
+                                <div class="rating-container">
+                                    <div class="rating-header">
+                                      <h3>Overall Player Ratings</h3>
+                                      <div class="overall-rating">
+                                        <span>3.98</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <small>(486953 reviews)</small>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Rating Breakdown -->
+                                    <div class="rating-bar">
+                                      <span>★★★★★</span>
+                                      <div class="progress-bar"><div style="width: 60%;"></div></div>
+                                      <div class="percentage">60%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★★☆</span>
+                                      <div class="progress-bar"><div style="width: 11%;"></div></div>
+                                      <div class="percentage">11%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★★☆☆</span>
+                                      <div class="progress-bar"><div style="width: 12%;"></div></div>
+                                      <div class="percentage">12%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★★☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 2%;"></div></div>
+                                      <div class="percentage">2%</div>
+                                    </div>
+                                    <div class="rating-bar">
+                                      <span>★☆☆☆☆</span>
+                                      <div class="progress-bar"><div style="width: 15%;"></div></div>
+                                      <div class="percentage">15%</div>
+                                    </div>
+                                  </div>
+                            </section>
+                
+                            <!--Comment-->
+                            <section class="comment-box">
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar1.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Axel06<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar3.png">
+                                      </div>
+                                      <div class="user-name">Isaac02<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Utile (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signaler
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="comment-container">
+                                    <div class="user-info">
+                                      <div class="user-avatar">
+                                        <img src="../images/Contact/image/avatar3.png" alt="User Avatar">
+                                      </div>
+                                      <div class="user-name">Niecko16<span class="ps-plus"><img src="../images/Contact/image/logo ps.png"></span></div>
+                                    </div>
+                                    <div class="comment-content">
+                                      <div class="comment-header">
+                                        <div class="stars">★★★☆☆</div>
+                                        <small>Review left on 12/08/2024</small>
+                                      </div>
+                                      <div class="comment-text">
+                                        <p>Good game</p>
+                                        <p>Great story. Multiplayer is not too bad, but could still be improved for multiplayer.</p>
+                                      </div>
+                                      <div class="comment-actions">
+                                        <button>
+                                          👍 Helpful (1)
+                                        </button>
+                                        <button>
+                                          🚩 Signal
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="end">
+                                <p>To learn more, visit www.callofduty.com.</p>
+                                <p>© 2024 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, and CALL OF DUTY BLACK OPS are trademarks of Activision Publishing,
+                                     Inc. All other trademarks and trade names are the property of their respective owners. This product contains software technology 
+                                     licensed from Id Software ("Id Technology"). Id Technology © 1999-2024 Id Software, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="new hidden">
+                <div class="card">
+                    <img src="../images/Home/image/Mafia.avif">
+                    <div class="info">
+                        <div class="name">Mafia The Old Country</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/Home/image/pirate.jpg">
+                    <div class="info">
+                        <div class="name">Pirate Yakuza in Hawail</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/Home/image/creed.jpg">
+                    <div class="info">
+                        <div class="name">Assassin's Creed Shadows</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/Home/image/dragon.avif">
+                    <div class="info">
+                        <div class="name">Dragon Age The VeilGuard</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/Home/image/doom.avif">
+                    <div class="info">
+                        <div class="name">Doom The DarkAges</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/Home/image/night.jpg">
+                    <div class="info">
+                        <div class="name">Little NightMares III</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/Home/image/ghost.avif">
+                    <div class="info">
+                        <div class="name">Ghost of Yotei</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/Home/image/death.jpg">
+                    <div class="info">
+                        <div class="name">Death Stranding 2</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/Home/image/borderlands.avif">
+                    <div class="info">
+                        <div class="name">Borderlands 4</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/Home/image/Hell.avif">
+                    <div class="info">
+                        <div class="name">Hell is Us</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/Home/image/indiana.avif">
+                    <div class="info">
+                        <div class="name">Indiana Jones</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/Home/image/aveum.avif">
+                    <div class="info">
+                        <div class="name">Immortals of Aveum</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Pagination-->
+    <div class="pagination">
+      <button id="left" class="pagination-btn">←</button>
+      <button id="right" class="pagination-btn">→</button>
+    </div>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <h4>products</h4>
+            <ul>
+                <li><a href="../html/product.html">latest arrivals</a></li>
+                <li><a href="../html/product.html">upcoming</a></li>
+                <li><a href="#">accessories</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>partners</h4>
+            <ul>
+                <li><a href="https://www.unrealengine.com/en-US">Unreal Engine</a></li>
+                <li><a href="https://www.playstation.com/fr-fr/">PlayStation</a></li>
+                <li><a href="https://www.activision.com/fr">Activision</a></li>
+                <li><a href="https://www.rockstargames.com/">RockStar</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="#">legal</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/product.js"></script>
+</html>

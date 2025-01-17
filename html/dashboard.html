@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<!--========== HEADER ==========-->
+<header class="header">
+    <div class="header__container">
+        <img src="../images/Home/image/logo1.png" class="header__img">
+
+        <a href="#" class="header__logo">E.Gaming</a>
+
+        <div class="header__search">
+            <input type="search" placeholder="Search" class="header__input">
+            <i class='bx bx-search header__icon'></i>
+        </div>
+
+        <div class="header__toggle">
+            <i class='bx bx-menu' id="header-toggle"></i>
+        </div>
+    </div>
+</header>
+<body>
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <i class='bx bxs-disc nav__icon' ></i>
+                    <span class="nav__logo-name">E.Gaming</span>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Profile</h3>
+
+                        <a href="#" class="nav__link active">
+                            <i class='bx bx-home nav__icon' ></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                        
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon' ></i>
+                                <span class="nav__name">Profile</span>
+                            </a>
+                        </div>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-message-rounded nav__icon' ></i>
+                            <span class="nav__name">Messages</span>
+                        </a>
+                    </div>
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Menu</h3>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-bell nav__icon' ></i>
+                                <span class="nav__name">Notifications</span>
+                            </a>
+                        </div>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-compass nav__icon' ></i>
+                            <span class="nav__name">Explore</span>
+                        </a>
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon' ></i>
+                            <span class="nav__name">Saved</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="../index.html" class="nav__link nav__logout">
+                <i class='bx bx-log-out nav__icon' ></i>
+                <span class="nav__name">Log Out</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-icon">💵</div>
+                <div>
+                    <h3>Earnings (Monthly)</h3>
+                    <p>$40,000</p>
+                </div>
+            </div>
+            <div class="metric">
+                <div class="metric-icon">📈</div>
+                <div>
+                    <h3>Earnings (Annual)</h3>
+                    <p>$215,000</p>
+                </div>
+            </div>
+            <div class="metric">
+                <div class="metric-icon">✅</div>
+                <div>
+                    <h3>Tasks</h3>
+                    <p>50%</p>
+                </div>
+            </div>
+            <div class="metric">
+                <div class="metric-icon">📬</div>
+                <div>
+                    <h3>Pending Requests</h3>
+                    <p>18</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="chart" id="lineChart">
+                <h3>Earnings Overview</h3>
+                <canvas id="line-chart"></canvas>
+            </div>
+            <div class="chart" id="pieChart">
+                <h3>Top Sales</h3>
+                <canvas id="pie-chart"></canvas>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="project-section">
+                <h3>Projects</h3>
+                <div class="grid">
+                    <p>Server Migration: 20%</p>
+                    <div class="load">
+                        <div class="color"></div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <p>Sales Tracking: 40%</p>
+                <div class="load">
+                    <div class="color"></div>
+                </div>
+                </div>
+                <div class="grid">
+                    <p>Customer Database: 60%</p>
+                    <div class="load">
+                        <div class="color"></div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <p>Payout Details: 80%</p>
+                    <div class="load">
+                        <div class="color"></div>
+                    </div>
+                </div>
+
+                <div class="orders-section">
+                    <div class="order-box">
+                        <img src="../images/Dashboard/image/farmer.jpg">
+                        <h4>John Doe</h4>
+                        <p>Country: USA</p>
+                        <p>Game: Cyber Adventure</p>
+                        <p>Price: $59.99</p>
+                    </div>
+                    <div class="order-box">
+                        <img src="../images/Dashboard/image/redgirl.jpg">
+                        <h4>Jane Smith</h4>
+                        <p>Country: UK</p>
+                        <p>Game: Fantasy World</p>
+                        <p>Price: $49.99</p>
+                    </div>
+                    <div class="order-box">
+                        <img src="../images/Dashboard/image/oldman.jpg">
+                        <h4>Ali Khan</h4>
+                        <p>Country: Pakistan</p>
+                        <p>Game: Battle Zone</p>
+                        <p>Price: $39.99</p>
+                    </div>
+                    <div class="order-box">
+                        <img src="../images/Dashboard/image/rosegirl.jpg">
+                        <h4>Maria Garcia</h4>
+                        <p>Country: Spain</p>
+                        <p>Game: Speed Racer</p>
+                        <p>Price: $29.99</p>
+                    </div>
+                    <div class="order-box">
+                        <img src="../images/Dashboard/image/redman.jpg">
+                        <h4>Hiro Tanaka</h4>
+                        <p>Country: Japan</p>
+                        <p>Game: Samurai Quest</p>
+                        <p>Price: $69.99</p>
+                    </div>
+                    <div class="order-box">
+                        <img src="../images/Dashboard/image/goodman.jpg">
+                        <h4>Youssouf Santana</h4>
+                        <p>Country: Germany</p>
+                        <p>Game: Samurai Quest</p>
+                        <p>Price: $79.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="illustration-box">
+                <h3>Illustration Title</h3>
+                <img src="../images/Dashboard/image/undraw_posting_photo.svg" alt="Illustration">
+                <p>Add some quality, svg illustrations to your project courtesy of <a
+                    target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a
+                constantly updated collection of beautiful svg images that you can use
+                completely free and without attribution!</p>
+                <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
+                    unDraw &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/chart.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
